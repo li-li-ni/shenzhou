@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神舟飞船百科全书</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">神舟飞船百科全书</h1>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#missions" class="nav-link">飞船任务</a></li>
+                <li><a href="#astronauts" class="nav-link">航天员</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home" class="section active">
+        <div class="container">
+            <div class="hero">
+                <h2>探索神舟飞船的光辉历程</h2>
+                <p>从神舟一号到最新的载人飞船，见证中国航天的伟大成就</p>
+                <a href="#missions" class="btn">探索任务</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>发射次数</p>
+                </div>
+                <div class="stat-item">
+                    <h3>20+</h3>
+                    <p>航天员</p>
+                </div>
+                <div class="stat-item">
+                    <h3>30+</h3>
+                    <p>太空飞行人次</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 飞船任务 -->
+    <section id="missions" class="section">
+        <div class="container">
+            <h2>神舟飞船任务</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="manned">载人任务</button>
+                <button class="filter-btn" data-filter="unmanned">无人任务</button>
+            </div>
+            <div class="missions-grid">
+                <!-- 神舟一号 -->
+                <div class="mission-card" data-category="unmanned">
+                    <div class="mission-header">
+                        <h3>神舟一号</h3>
+                        <span class="mission-type unmanned">无人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">1999年11月20日</p>
+                        <p class="mission-desc">中国载人航天工程的首次飞行，考核了运载火箭性能和可靠性，验证了飞船关键技术和系统设计的正确性。</p>
+                        <button class="detail-btn" data-id="shenzhou1">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟二号 -->
+                <div class="mission-card" data-category="unmanned">
+                    <div class="mission-header">
+                        <h3>神舟二号</h3>
+                        <span class="mission-type unmanned">无人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2001年1月10日</p>
+                        <p class="mission-desc">我国第一艘正样无人飞船，飞船技术状态与载人飞船基本一致。</p>
+                        <button class="detail-btn" data-id="shenzhou2">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟三号 -->
+                <div class="mission-card" data-category="unmanned">
+                    <div class="mission-header">
+                        <h3>神舟三号</h3>
+                        <span class="mission-type unmanned">无人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2002年3月25日</p>
+                        <p class="mission-desc">搭载了人体代谢模拟装置、拟人生理信号设备以及形体假人，能够定量模拟航天员呼吸和血液循环的重要生理活动参数。</p>
+                        <button class="detail-btn" data-id="shenzhou3">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟四号 -->
+                <div class="mission-card" data-category="unmanned">
+                    <div class="mission-header">
+                        <h3>神舟四号</h3>
+                        <span class="mission-type unmanned">无人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2002年12月30日</p>
+                        <p class="mission-desc">突破了我国低温发射的历史纪录，技术状态与载人飞船完全一致。</p>
+                        <button class="detail-btn" data-id="shenzhou4">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟五号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟五号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2003年10月15日</p>
+                        <p class="mission-desc">我国首飞航天员杨利伟搭乘神舟五号飞船在轨飞行14圈，历时21小时23分后安全返回。</p>
+                        <button class="detail-btn" data-id="shenzhou5">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟六号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟六号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2005年10月12日</p>
+                        <p class="mission-desc">航天员费俊龙、聂海胜搭乘神舟六号飞船进入太空，实现了多人多天飞行试验。</p>
+                        <button class="detail-btn" data-id="shenzhou6">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟七号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟七号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2008年9月25日</p>
+                        <p class="mission-desc">航天员翟志刚、刘伯明、景海鹏搭乘神舟七号飞船进入太空，翟志刚成功实施首次空间出舱活动。</p>
+                        <button class="detail-btn" data-id="shenzhou7">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟八号 -->
+                <div class="mission-card" data-category="unmanned">
+                    <div class="mission-header">
+                        <h3>神舟八号</h3>
+                        <span class="mission-type unmanned">无人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2011年11月1日</p>
+                        <p class="mission-desc">与天宫一号进行了两次空间无人自动交会对接，突破和掌握了自动交会对接技术。</p>
+                        <button class="detail-btn" data-id="shenzhou8">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟九号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟九号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2012年6月16日</p>
+                        <p class="mission-desc">航天员景海鹏、刘旺、刘洋搭乘神舟九号飞船进入太空，与天宫一号实现自动交会对接，刘洋成为我国首飞女航天员。</p>
+                        <button class="detail-btn" data-id="shenzhou9">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2013年6月11日</p>
+                        <p class="mission-desc">航天员聂海胜、张晓光、王亚平搭乘神舟十号飞船进入太空，成功开展我国首次太空授课任务。</p>
+                        <button class="detail-btn" data-id="shenzhou10">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十一号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十一号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2016年10月17日</p>
+                        <p class="mission-desc">航天员景海鹏、陈冬入驻天宫二号空间实验室，进行了为期30天的太空驻留生活。</p>
+                        <button class="detail-btn" data-id="shenzhou11">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十二号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十二号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2021年6月17日</p>
+                        <p class="mission-desc">航天员聂海胜、刘伯明、汤洪波在空间站进行了为期3个月的驻留，完成了2次出舱活动。</p>
+                        <button class="detail-btn" data-id="shenzhou12">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十三号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十三号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2021年10月16日</p>
+                        <p class="mission-desc">航天员翟志刚、王亚平、叶光富在空间站进行了为期6个月的驻留，创造了中国航天员连续在轨飞行时长新纪录。</p>
+                        <button class="detail-btn" data-id="shenzhou13">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十四号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十四号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2022年6月5日</p>
+                        <p class="mission-desc">航天员陈冬、刘洋、蔡旭哲在空间站进行为期6个月的驻留任务，完成了中国空间站T字基本构型在轨组装建造。</p>
+                        <button class="detail-btn" data-id="shenzhou14">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十五号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十五号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2022年11月29日</p>
+                        <p class="mission-desc">航天员费俊龙、邓清明、张陆入驻中国空间站，与神舟十四号乘组完成首次太空会师，见证了中国空间站全面建成的历史时刻。</p>
+                        <button class="detail-btn" data-id="shenzhou15">查看详情</button>
+                    </div>
+                </div>
+                
+                <!-- 神舟十六号 -->
+                <div class="mission-card" data-category="manned">
+                    <div class="mission-header">
+                        <h3>神舟十六号</h3>
+                        <span class="mission-type manned">载人任务</span>
+                    </div>
+                    <div class="mission-content">
+                        <p class="mission-date">2023年5月30日</p>
+                        <p class="mission-desc">航天员景海鹏、朱杨柱、桂海潮入驻空间站，朱杨柱成为我国首位航天飞行工程师，桂海潮成为首位载荷专家。</p>
+                        <button class="detail-btn" data-id="shenzhou16">查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 航天员 -->
+    <section id="astronauts" class="section">
+        <div class="container">
+            <h2>航天员</h2>
+            <div class="astronauts-grid">
+                <!-- 杨利伟 -->
+                <div class="astronaut-card">
+                    <h3>杨利伟</h3>
+                    <p>神舟五号航天员，中国首位进入太空的航天员</p>
+                </div>
+                
+                <!-- 费俊龙 -->
+                <div class="astronaut-card">
+                    <h3>费俊龙</h3>
+                    <p>神舟六号、神舟十五号航天员</p>
+                </div>
+                
+                <!-- 聂海胜 -->
+                <div class="astronaut-card">
+                    <h3>聂海胜</h3>
+                    <p>神舟六号、神舟十号、神舟十二号航天员</p>
+                </div>
+                
+                <!-- 翟志刚 -->
+                <div class="astronaut-card">
+                    <h3>翟志刚</h3>
+                    <p>神舟七号、神舟十三号航天员，中国首位出舱活动的航天员</p>
+                </div>
+                
+                <!-- 刘伯明 -->
+                <div class="astronaut-card">
+                    <h3>刘伯明</h3>
+                    <p>神舟七号、神舟十二号航天员</p>
+                </div>
+                
+                <!-- 景海鹏 -->
+                <div class="astronaut-card">
+                    <h3>景海鹏</h3>
+                    <p>神舟七号、神舟九号、神舟十一号、神舟十六号航天员</p>
+                </div>
+                
+                <!-- 刘旺 -->
+                <div class="astronaut-card">
+                    <h3>刘旺</h3>
+                    <p>神舟九号航天员，首位进行手控交会对接的航天员</p>
+                </div>
+                
+                <!-- 刘洋 -->
+                <div class="astronaut-card">
+                    <h3>刘洋</h3>
+                    <p>神舟九号、神舟十四号航天员，中国首位女航天员</p>
+                </div>
+                
+                <!-- 张晓光 -->
+                <div class="astronaut-card">
+                    <h3>张晓光</h3>
+                    <p>神舟十号航天员</p>
+                </div>
+                
+                <!-- 王亚平 -->
+                <div class="astronaut-card">
+                    <h3>王亚平</h3>
+                    <p>神舟十号、神舟十三号航天员，首位太空教师</p>
+                </div>
+                
+                <!-- 陈冬 -->
+                <div class="astronaut-card">
+                    <h3>陈冬</h3>
+                    <p>神舟十一号、神舟十四号航天员</p>
+                </div>
+                
+                <!-- 汤洪波 -->
+                <div class="astronaut-card">
+                    <h3>汤洪波</h3>
+                    <p>神舟十二号航天员</p>
+                </div>
+                
+                <!-- 叶光富 -->
+                <div class="astronaut-card">
+                    <h3>叶光富</h3>
+                    <p>神舟十三号航天员</p>
+                </div>
+                
+                <!-- 蔡旭哲 -->
+                <div class="astronaut-card">
+                    <h3>蔡旭哲</h3>
+                    <p>神舟十四号航天员</p>
+                </div>
+                
+                <!-- 邓清明 -->
+                <div class="astronaut-card">
+                    <h3>邓清明</h3>
+                    <p>神舟十五号航天员</p>
+                </div>
+                
+                <!-- 张陆 -->
+                <div class="astronaut-card">
+                    <h3>张陆</h3>
+                    <p>神舟十五号航天员</p>
+                </div>
+                
+                <!-- 朱杨柱 -->
+                <div class="astronaut-card">
+                    <h3>朱杨柱</h3>
+                    <p>神舟十六号航天员，中国首位航天飞行工程师</p>
+                </div>
+                
+                <!-- 桂海潮 -->
+                <div class="astronaut-card">
+                    <h3>桂海潮</h3>
+                    <p>神舟十六号航天员，中国首位载荷专家</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>关于神舟飞船</h2>
+            <div class="about-content">
+                <p>神舟飞船是中国自行研制的用于天地往返运输人员和物资的载人航天器。飞船可一船多用，既可留轨观测又可作为交会对接飞行器，满足天地往返的需求。</p>
+                <p>飞船由轨道舱、返回舱、推进舱和附加段组成。轨道舱是航天员生活和工作的地方。返回舱是飞船的指挥控制中心，航天员乘坐其上天和返回地面。推进舱也称动力舱，为飞船在轨飞行和返回地面提供能源和动力。</p>
+                <p>从1999年11月20日神舟一号发射成功，到2023年5月30日神舟十六号发射成功，中国载人航天工程取得了举世瞩目的成就，实现了从无人飞行到载人飞行、从一人一天到多人多天、从舱内实验到出舱活动、从单船飞行到组合体稳定运行的重大跨越。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 详情模态框 -->
+    <div class="modal" id="missionModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- 详情内容将通过JavaScript动态填充 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
